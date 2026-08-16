@@ -1,62 +1,148 @@
+body {
+    color: #131C26;
+    background-color: #FFF7EE;
+    margin: 0;
+}
 
-.Header
-{
+.Header {
     background-color: #C7B65E;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 3rem;
 }
 
-.Header-logo
-{
-    width: 20rem;
-    margin-top: 3rem;
-    margin-left: 3rem;
+.Header-brand {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
-.Header-title
-{
-    font-size: 60px;
-    position: fixed;
+.Header-logo {
+    width: 12rem;
+    height: auto;
 }
 
-.Header-searchbar
-{
-    position: fixed;
-    top: 2rem;
-    right: 5.5rem;
+.Header-title {
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.Header-cart
-{
-    background-color: #2E4057;
+.Header-tools {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.Header-searchbar {
+    display: flex;
+}
+
+.Header-searchbar input {
+    min-width: 14rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #2E4057;
+    border-radius: 0.35rem 0 0 0.35rem;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+}
+
+.Header-searchbar button {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #2E4057;
+    border-left: 0;
+    border-radius: 0 0.35rem 0.35rem 0;
+    background-color: #FFF7EE;
+    color: #131C26;
+    cursor: pointer;
+}
+
+.Header-cart {
     width: 4rem;
     height: 4rem;
+    padding: 0;
+    border: 0;
     border-radius: 1rem;
-    text-align: center;
-
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    background-color: #2E4057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.fa-cart-shopping
-{
-    margin-top: 0.6rem;
-    font-size: 3rem;
+.fa-cart-shopping {
+    font-size: 2rem;
     color: #FFF7EE;
 }
 
-#Sliding-promo
-{
+.Header-nav {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.Header-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Header-nav a {
+    color: #131C26;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Header-nav a:hover,
+.Header-nav a:focus-visible {
+    text-decoration: underline;
+}
+
+#Sliding-promo {
     height: 20rem;
     background-color: #EE583F;
 }
 
-body
-{
-    color: #131C26;
-    background-color: #FFF7EE;
-    margin: 0%;
-}
+@media (max-width: 800px) {
+    .Header {
+        padding: 1.5rem;
+    }
 
-h1 {
-    font: bold 40px "Trebuchet MS", sans-serif;
+    .Header-brand {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .Header-logo {
+        width: 8rem;
+    }
+
+    .Header-title {
+        font-size: 2rem;
+    }
+
+    .Header-tools {
+        width: 100%;
+        margin-top: 1.5rem;
+        margin-left: 0;
+    }
+
+    .Header-searchbar {
+        flex: 1;
+    }
+
+    .Header-searchbar input {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .Header-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem 1.5rem;
+    }
 }
