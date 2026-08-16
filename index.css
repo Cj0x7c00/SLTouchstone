@@ -86,15 +86,31 @@ body {
 
 .Header-nav ul {
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+.Header-nav li {
+    display: flex;
+    align-items: center;
+}
+
+.Header-nav li:not(:last-child)::after {
+    content: "|";
+    margin: 0 1.25rem;
+    color: #2E4057;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
 .Header-nav a {
     color: #131C26;
     font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
 }
@@ -145,7 +161,15 @@ body {
 
     .Header-nav ul {
         flex-wrap: wrap;
-        gap: 1rem 1.5rem;
+        row-gap: 0.75rem;
+    }
+
+    .Header-nav li:not(:last-child)::after {
+        margin: 0 0.75rem;
+    }
+
+    .Header-nav a {
+        font-size: 1.05rem;
     }
 
     #Sliding-promo {
