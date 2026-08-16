@@ -9,17 +9,18 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 3rem;
+    min-height: 17rem;
+    padding: 2.5rem 3rem 1.75rem;
 }
 
 .Header-brand {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .Header-logo {
-    width: 12rem;
+    width: 14rem;
     height: auto;
 }
 
@@ -80,7 +81,7 @@ body {
 
 .Header-nav {
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .Header-nav ul {
@@ -104,12 +105,13 @@ body {
 }
 
 #Sliding-promo {
-    height: 20rem;
+    height: 7rem;
     background-color: #EE583F;
 }
 
 @media (max-width: 800px) {
     .Header {
+        min-height: auto;
         padding: 1.5rem;
     }
 
@@ -144,5 +146,9 @@ body {
     .Header-nav ul {
         flex-wrap: wrap;
         gap: 1rem 1.5rem;
+    }
+
+    #Sliding-promo {
+        height: 5rem;
     }
 }
