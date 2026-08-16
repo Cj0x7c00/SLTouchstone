@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookHaven | Home</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -8,43 +10,47 @@
 </head>
 
 <body>
-
-    <div class="Header">
-        <!--Logo, Title header, etc-->
-        <img class="Header-logo" src="res/Client3_LogoPalette1_2E4057.png">
-        <h1 class="Header-title">Book Haven Bookstore</h1>
-
-        <div class="Header-cart">
-            <i class="fa-duotone fa-solid fa-cart-shopping"></i>
+    <header class="Header">
+        <div class="Header-brand">
+            <img class="Header-logo" src="res/Client3_LogoPalette1_2E4057.png" alt="Book Haven Bookstore logo">
+            <h1 class="Header-title">Book Haven Bookstore</h1>
         </div>
 
-        <div class="Header-searchbar">
-            <input type="text" placeholder="Search...">
-            <button type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="Header-tools">
+            <form class="Header-searchbar" role="search">
+                <input type="search" placeholder="Search..." aria-label="Search Book Haven">
+                <button type="submit" aria-label="Submit search">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+            </form>
+
+            <button class="Header-cart" type="button" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
             </button>
         </div>
 
-        <nav>
-            <ul style="margin: 0%;">
+        <nav class="Header-nav" aria-label="Main navigation">
+            <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#Shop">Shop</a></li>
+                <li><a href="#shop">Shop</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#events">Events</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
 
-    <div id="Sliding-promo">
-        <!--Sliding promo banner-->
-    </div>
+    <main id="home">
+        <section id="Sliding-promo">
+            <!-- Sliding promo banner -->
+        </section>
 
-    <div id="Loyalty-Perks">
-        <!--Loyalty perks-->
-        <button id="Member-signup-btn">Become A Member!</button>
-    </div>
+        <section id="Loyalty-Perks">
+            <!-- Loyalty perks -->
+            <button id="Member-signup-btn" type="button">Become A Member!</button>
+        </section>
+    </main>
 
+    <footer>
+    </footer>
 </body>
-<footer>
-
-</footer>
+</html>
