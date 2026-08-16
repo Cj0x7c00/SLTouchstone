@@ -1,0 +1,62 @@
+
+.Header
+{
+    background-color: #C7B65E;
+}
+
+.Header-logo
+{
+    width: 20rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.Header-title
+{
+    font-size: 60px;
+    position: fixed;
+}
+
+.Header-searchbar
+{
+    position: fixed;
+    top: 2rem;
+    right: 5.5rem;
+}
+
+.Header-cart
+{
+    background-color: #2E4057;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    text-align: center;
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.fa-cart-shopping
+{
+    margin-top: 0.6rem;
+    font-size: 3rem;
+    color: #FFF7EE;
+}
+
+#Sliding-promo
+{
+    height: 20rem;
+    background-color: #EE583F;
+}
+
+body
+{
+    color: #131C26;
+    background-color: #FFF7EE;
+    margin: 0%;
+}
+
+h1 {
+    font: bold 40px "Trebuchet MS", sans-serif;
+}
